@@ -25,6 +25,13 @@ namespace WebApiMiddleware
             mvcCoreBuilder.AddDataAnnotations();
             mvcCoreBuilder.AddJsonFormatters();
             mvcCoreBuilder.AddCors();
+
+            //-MvcServiceCollectionExtensions.AddDefaultFrameworkParts(mvcCoreBuilder.PartManager);
+            //-mvcCoreBuilder.AddViews();
+            //-mvcCoreBuilder.AddRazorViewEngine();
+            //-mvcCoreBuilder.AddRazorPages();
+            //-mvcCoreBuilder.AddCacheTagHelper();
+
             return new MvcBuilder(mvcCoreBuilder.Services, mvcCoreBuilder.PartManager);
         }
 
