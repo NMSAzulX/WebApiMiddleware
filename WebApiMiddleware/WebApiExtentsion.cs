@@ -11,7 +11,7 @@ namespace WebApiMiddleware
         /// Adds WebApi services to the specified <see cref="IServiceCollection" />.
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection" /> to add services to.</param>
-        /// <returns>An <see cref="IMvcBuilder"/> that can be used to further configure the MVC services.</returns>
+        /// <returns>An <see cref="IMvcBuilder"/> that can be used to further configure the WebApi services.</returns>
         public static IMvcBuilder AddWebApi(this IServiceCollection services)
         {
             if (services == null)
@@ -40,7 +40,7 @@ namespace WebApiMiddleware
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection" /> to add services to.</param>
         /// <param name="setupAction">An <see cref="Action{MvcOptions}"/> to configure the provided <see cref="MvcOptions"/>.</param>
-        /// <returns>An <see cref="IMvcBuilder"/> that can be used to further configure the MVC services.</returns>
+        /// <returns>An <see cref="IMvcBuilder"/> that can be used to further configure the WebApi services.</returns>
         public static IMvcBuilder AddWebApi(this IServiceCollection services, Action<MvcOptions> setupAction)
         {
             if (services == null)
